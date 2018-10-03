@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".activity.LanguageActivity">
+
+    <LinearLayout
+        android:id="@+id/linearTol"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_chevron_right_white_24dp"
+            android:gravity="end"
+            android:text="Skip"
+            android:textAlignment="textEnd"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vieww"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/linearTol"
+        android:background="@color/white"></View>
+
+    <TextView
+        android:id="@+id/tvvvvvv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vieww"
+        android:layout_marginTop="10dp"
+        android:text="Please Select the languages you \n are able to speak"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvvvvvv"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="you can select up to 5 languages.this will be added to your profile."
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/back_white"
+        android:padding="10dp"
+        android:text="OK"
+        android:textAlignment="center"
+        android:textColor="@color/Darkgray"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

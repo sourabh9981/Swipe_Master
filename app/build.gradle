@@ -1,0 +1,116 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.swipe.shrinkcom"
+        minSdkVersion 24
+        targetSdkVersion 27
+        versionCode 2
+        versionName "1.1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+
+        multiDexEnabled true
+
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "x86", "mips"
+        }
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets.main {
+        jniLibs.srcDir 'libs'
+        jni.srcDirs = [] //disable automatic ndk-build call
+    }
+    compileOptions {
+
+        //sourceCompatibility JavaVersion.VERSION_1_8
+        //targetCompatibility JavaVersion.VERSION_1_8
+    targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+
+    /*dexOptions {
+        incremental = true;
+        preDexLibraries = false
+        javaMaxHeapSize "4g"
+    }
+*/
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+    }
+
+}
+dependencies {
+    configurations {
+        all*.exclude group: 'com.android.support', module: 'support-v13'
+    }
+
+    //implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:design:27.1.1'
+   // implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:support-vector-drawable:27.1.1'
+    implementation 'com.android.support:support-v4:27.1.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'fr.avianey.com.viewpagerindicator:library:2.4.1.1@aar'
+    // Glide
+    implementation 'com.github.bumptech.glide:glide:4.3.0'
+    //implementation 'com.flaviofaria:kenburnsview:1.0.7'
+    //  implementation 'com.google.android.gms:play-services-auth:11.8.0'
+     implementation 'com.google.firebase:firebase-core:16.0.3'
+     implementation 'com.google.firebase:firebase-messaging:17.3.2'
+
+    implementation 'com.google.android.gms:play-services-wallet:16.0.0'
+    implementation 'com.google.android.gms:play-services-ads:15.0.1'
+
+    implementation 'com.github.irshadsparky:Login-Library-By-Irshad:master-SNAPSHOT'
+
+   // implementation project(':lib')
+   // implementation 'uk.me.lewisdeane.ldialogs:ldialogs:1.2.0@aar'
+    //tesandroidTestImplementation 'com.jayway.android.robotium:robotium-solo:5.5.2'
+    implementation "com.jakewharton.timber:timber:$rootProject.timberVersion"
+
+    // retrofit, gson
+    implementation "com.google.code.gson:gson:$rootProject.gsonVersion"
+    implementation "com.squareup.retrofit2:retrofit:$rootProject.retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$rootProject.retrofitVersion"
+    implementation 'com.mcxiaoke.volley:library-aar:1.0.0'
+
+
+    implementation 'com.google.code.gson:gson:2.8.5'
+   // implementation 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1'
+    implementation 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.1'
+
+
+    implementation 'com.github.irshadsparky:PermissionLib:master-SNAPSHOT'
+
+}
+//apply plugin: 'com.google.gms.google-services'

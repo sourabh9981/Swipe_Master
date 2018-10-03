@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/rootlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/idimages"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_weight=".2"
+        android:src="@drawable/profile"/>
+        <TextView
+            android:id="@+id/idtvname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.5"
+            android:text="name user"/>
+
+        <LinearLayout
+            android:id="@+id/manegelayout"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:layout_weight=".2"
+            android:background="@drawable/rounded_shap"
+            android:layout_gravity="center">
+            <TextView
+                android:id="@+id/idmanage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                android:text="Manage"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="#bababa"/>
+
+</LinearLayout>

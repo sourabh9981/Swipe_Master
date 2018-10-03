@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.EditNickActivity">
+
+    <LinearLayout
+        android:id="@+id/linearTop"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edit NickName"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".9">
+
+            <ImageView
+                android:id="@+id/fab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:backgroundTint="@color/white"
+                app:srcCompat="@drawable/ic_close" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/linearTop"
+        android:background="@color/gray" />
+
+    <TextView
+        android:id="@+id/tvv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_marginTop="20dp"
+        android:text="Be advised, inappropriate Nicknames will be rejected."
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/lineartrts"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/tvv"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etNick"
+            style="@style/Base.Widget.AppCompat.EditText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".9"
+            android:background="@null"
+            android:hint="Enter Nickname"
+            android:text="" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".1"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/ic_close" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lineraebutt"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/lineartrts"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/back_theme"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Nickname"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lineraebutt"
+        android:layout_marginTop="20dp"
+        android:text="We can change your nickname one time for 600.00.Swipe VIP members can use this feature unlimitedly without paying an extra fee."
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+</RelativeLayout>

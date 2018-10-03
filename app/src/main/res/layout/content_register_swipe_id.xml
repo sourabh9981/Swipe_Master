@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.RegisterSwipeIdActivity"
+    tools:showIn="@layout/activity_register_swipe_id">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/please_entterswipeid"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="20/20"
+            android:layout_gravity="right"
+            android:gravity="right"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/frag">
+
+            <EditText
+                android:id="@+id/idedtswipeid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="swipeid"
+                android:textSize="16dp"
+                android:textColor="#000"
+                android:inputType="text"
+                android:singleLine="true"
+                android:background="@android:color/transparent"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:padding="8dp"
+                android:id="@+id/idcancel"
+                 android:src="@android:drawable/ic_menu_close_clear_cancel"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:layout_gravity="right"
+                android:layout_height="wrap_content"></ImageView>
+        </FrameLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorPrimary"/>
+
+        <Button
+            android:id="@+id/idregister"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:layout_marginTop="26dp"
+            android:text="Register"/>
+    </LinearLayout>
+</RelativeLayout>

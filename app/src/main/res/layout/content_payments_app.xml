@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.PaymentsAppActivity"
+    tools:showIn="@layout/activity_payments_app">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/margin_xlarge">
+
+        <include
+            android:id="@+id/googlepay_button"
+            layout="@layout/googlepay_button"
+            android:layout_width="@dimen/buy_button_width"
+            android:layout_height="@dimen/buy_button_height"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/googlepay_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/googlepay_status_checking" />
+    </FrameLayout>
+
+
+</RelativeLayout>

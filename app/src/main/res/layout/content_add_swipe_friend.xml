@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.AddSwipeFriend"
+    android:background="#efeeee"
+    tools:showIn="@layout/activity_add_swipe_friend">
+
+
+
+
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/idlayoutseach"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/idsearch"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="left|center"
+            android:gravity="left|center"
+            android:drawableLeft="@drawable/ic_search_black_24dp"
+            android:background="@android:color/transparent"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+
+            android:hint="Search"
+            />
+
+    </LinearLayout>
+
+
+    <View android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/gray">
+    </View>
+
+
+
+
+    <LinearLayout
+
+        android:id="@+id/idlayoutnoid"
+        android:layout_below="@+id/idlayoutseach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/idnoresult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:text=""/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:text="You do not have an Swipe ID yet!\nmake one now"/>
+
+        <TextView
+            android:id="@+id/registerswipeid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textSize="18dp"
+            android:textColor="@color/colorPrimary"
+            android:text="Register my Swipe ID"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/idlayoutnoid_reponse"
+        android:layout_below="@+id/idlayoutnoid"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iduserimage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/profile"/>
+        <TextView
+            android:id="@+id/idusername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="user name"/>
+
+        <LinearLayout
+            android:id="@+id/idaddfriendlist"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:background="@drawable/button_background">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_add_white_24dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Add to Friend List"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/viewswipeid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="My Swipe ID"/>
+        <TextView
+            android:id="@+id/setswipeid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:text="Shrinkcom"/>
+    </LinearLayout>
+
+
+   </LinearLayout>
+</RelativeLayout>

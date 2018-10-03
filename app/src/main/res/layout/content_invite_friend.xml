@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.InviteFriendActivity"
+    tools:showIn="@layout/activity_invite_friend">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#efefef"
+        android:id="@+id/frag">
+
+        <TextView
+            android:id="@+id/srchHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search.."
+            android:textSize="16dp"
+            android:textColor="#000"
+            android:layout_gravity="center" />
+
+        <SearchView
+            android:background="#efefef"
+            android:padding="8dp"
+            android:id="@+id/searchView"
+            android:drawableLeft="@android:drawable/ic_menu_search"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:layout_gravity="right"
+            android:layout_height="wrap_content"></SearchView>
+    </FrameLayout>
+
+
+    <ListView
+        android:layout_below="@+id/frag"
+        android:id="@+id/idrecycleview"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/invitefriend"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="#36585757"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:text="invite"/>
+    </LinearLayout>
+</RelativeLayout>
