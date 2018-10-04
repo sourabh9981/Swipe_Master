@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Swipe</string>
+    <string name="app_name">MeetGo</string>
 
 
     <string name="facebook_app_id">776128272780426</string>
@@ -23,7 +23,7 @@
 
 
     <string name="title_name_notfound">Sorry, there are no results by that name.</string>
-    <string name="title_name_atlistfour_digit">Swipe ID should be minimum 4 charaters long.</string>
+    <string name="title_name_atlistfour_digit">MeetGo ID should be minimum 4 charaters long.</string>
 
 
     <!-- TODO: Remove or change this placeholder text -->
@@ -39,12 +39,12 @@
     <string name="title_activity_language">LanguageActivity</string>
     <string name="u20b9_999_00_monthly">₹ 999.00 / Monthly</string>
     <string name="title_activity_invite_friend">InviteFriendActivity</string>
-    <string name="title_activity_add_swipe_friend">AddSwipeFriend</string>
-    <string name="title_activity_register_swipe_id">RegisterSwipeIdActivity</string>
-    <string name="please_entterswipeid">Please enter your desired Swipe ID. plaese  think carefully Your Swipe ID cannot be  changed once it is set</string>
+    <string name="title_activity_add_swipe_friend">AddMeetGoFriend</string>
+    <string name="title_activity_register_swipe_id">RegisterMeetGoIdActivity</string>
+    <string name="please_entterswipeid">Please enter your desired MeetGo ID. plaese  think carefully Your MeetGo ID cannot be  changed once it is set</string>
     <string name="title_activity_action_friend">ActionFriendActivity</string>
     <string name="title_activity_passcode">PasscodeActivity</string>
-    <string name="if_you_forget_your_passcodeyou_ii_have_to_delete_and_reinstall_swipe">if you forget your passcodeyou\'ii have to delete and reinstall Swipe</string>
+    <string name="if_you_forget_your_passcodeyou_ii_have_to_delete_and_reinstall_swipe">if you forget your passcodeyou\'ii have to delete and reinstall MeetGo</string>
     <string name="change_password">Change Passcode</string>
     <string name="passcode_lock">Passcode lock</string>
     <string name="activity_not_locked_text">Nothing should happen on this page, here for test purpose</string>
@@ -277,6 +277,6 @@
     <string name="title_activity_thumbsup_list">ThumbsupListActivity</string>
     <string name="title_activity_filter">FilterActivity</string>
     <string name="gemspurchasemessage">Gems are used per profile you have received when</string>
-    <string name="title_activity_display_filteruser"> Swipe </string>
+    <string name="title_activity_display_filteruser"> MeetGo </string>
     <string name="send_to_friend_frquest">send to friend frquest Accept Friend Request add to to continue chatting</string>
 </resources>

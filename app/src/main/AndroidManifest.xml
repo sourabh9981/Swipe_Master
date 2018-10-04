@@ -16,6 +16,8 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.CAPTURE_VIDEO_OUTPUT" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
 
 
@@ -48,8 +50,8 @@
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id" />
 
-        <service android:name=".services.RefreshmessageServicess" />
-        <service android:name=".services.GemsReduceService" />
+        <service android:name="com.swipe.shrinkcom.swipe.services.RefreshmessageServicess" />
+        <service android:name="com.swipe.shrinkcom.swipe.services.GemsReduceService" />
         <!--<meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="@string/googleaidsid"/>-->
@@ -72,7 +74,7 @@
                 <data android:scheme="@string/fb_login_protocol_scheme" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.SplashActivity">
+        <activity android:name="com.swipe.shrinkcom.swipe.activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -93,55 +95,55 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.LoginActivity"
+            android:name="com.swipe.shrinkcom.swipe.activity.LoginActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activity.LoginSecondActivity"
+            android:name="com.swipe.shrinkcom.swipe.activity.LoginSecondActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activity.MainActivity"
+            android:name="com.swipe.shrinkcom.swipe.activity.MainActivity"
             android:label="@string/title_activity_main"
             android:theme="@style/MyMaterialTheme" />
         <activity
-            android:name=".activity.HomeActivity"
+            android:name="com.swipe.shrinkcom.swipe.activity.HomeActivity"
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".activity.AddFriendActivity"
+            android:name="com.swipe.shrinkcom.swipe.activity.AddFriendActivity"
             android:label="@string/title_activity_add_friend"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".activity.SettingsActivity"
+            android:name="com.swipe.shrinkcom.swipe.activity.SettingsActivity"
             android:label="@string/title_activity_settings"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".activity.RegisterIdActivity"
+            android:name="com.swipe.shrinkcom.swipe.activity.RegisterIdActivity"
             android:label="@string/title_activity_register_id"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".activity.SearchActivity"
+            android:name="com.swipe.shrinkcom.swipe.activity.SearchActivity"
             android:label="@string/title_activity_search"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".activity.ProfileActivity"
+            android:name="com.swipe.shrinkcom.swipe.activity.ProfileActivity"
             android:label="@string/title_activity_profile"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".activity.EditNickActivity"
+            android:name="com.swipe.shrinkcom.swipe.activity.EditNickActivity"
             android:label="@string/title_activity_edit_nick"
             android:theme="@style/AppTheme" />
-        <activity android:name=".activity.SelectInterestActivity" />
-        <activity android:name=".activity.ThumpsUpActivity" />
-        <activity android:name=".activity.ThumpsUpListActivity" />
-        <activity android:name=".activity.MyGemdsActivity" />
-        <activity android:name=".activity.MessageActivity" />
-        <activity android:name=".activity.Profile_newActivity" />
+        <activity android:name="com.swipe.shrinkcom.swipe.activity.SelectInterestActivity" />
+        <activity android:name="com.swipe.shrinkcom.swipe.activity.ThumpsUpActivity" />
+        <activity android:name="com.swipe.shrinkcom.swipe.activity.ThumpsUpListActivity" />
+        <activity android:name="com.swipe.shrinkcom.swipe.activity.MyGemdsActivity" />
+        <activity android:name="com.swipe.shrinkcom.swipe.activity.MessageActivity" />
+        <activity android:name="com.swipe.shrinkcom.swipe.activity.Profile_newActivity" />
         <activity
-            android:name=".activity.LanguageActivity"
+            android:name="com.swipe.shrinkcom.swipe.activity.LanguageActivity"
             android:label="@string/title_activity_language"
             android:theme="@style/AppTheme" />
-        <activity android:name=".activity.BirthActivity" />
-        <activity android:name=".activity.VipActivity" />
+        <activity android:name="com.swipe.shrinkcom.swipe.activity.BirthActivity" />
+        <activity android:name="com.swipe.shrinkcom.swipe.activity.VipActivity" />
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
@@ -159,15 +161,15 @@
             android:label="@string/app_name" />
         -->
         <activity
-            android:name=".activity.InviteFriendActivity"
+            android:name="com.swipe.shrinkcom.swipe.activity.InviteFriendActivity"
             android:label="@string/title_activity_invite_friend"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".activity.AddSwipeFriend"
+            android:name="com.swipe.shrinkcom.swipe.activity.AddSwipeFriend"
             android:label="@string/title_activity_add_swipe_friend"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".activity.RegisterSwipeIdActivity"
+            android:name="com.swipe.shrinkcom.swipe.activity.RegisterSwipeIdActivity"
             android:label="@string/title_activity_register_swipe_id"
             android:theme="@style/AppTheme" />
 
@@ -188,34 +190,34 @@
         -->
 
         <activity
-            android:name=".activity.ActionFriendActivity"
+            android:name="com.swipe.shrinkcom.swipe.activity.ActionFriendActivity"
             android:label="@string/title_activity_action_friend"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".activity.PasscodeActivity"
+            android:name="com.swipe.shrinkcom.swipe.activity.PasscodeActivity"
             android:label="@string/title_activity_passcode"
             android:theme="@style/AppTheme" />
-        <activity android:name=".activity.LoginActivity2" />
+        <activity android:name="com.swipe.shrinkcom.swipe.activity.LoginActivity2" />
         <activity
-            android:name=".activity.PaymentsAppActivity"
+            android:name="com.swipe.shrinkcom.swipe.activity.PaymentsAppActivity"
             android:label=""
             android:theme="@style/AppTheme" />
-        <activity android:name=".webrtc.ConnectActivity" />
-        <activity android:name=".webrtc.CallActivity" />
+        <activity android:name="com.swipe.shrinkcom.swipe.webrtc.ConnectActivity" />
+        <activity android:name="com.swipe.shrinkcom.swipe.webrtc.CallActivity" />
         <activity
-            android:name=".activity.ItemInventory"
+            android:name="com.swipe.shrinkcom.swipe.activity.ItemInventory"
             android:label="@string/title_activity_item_inventory"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".activity.ThumbsupListActivity"
+            android:name="com.swipe.shrinkcom.swipe.activity.ThumbsupListActivity"
             android:label="@string/title_activity_thumbsup_list"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".activity.FilterActivity"
+            android:name="com.swipe.shrinkcom.swipe.activity.FilterActivity"
             android:label="@string/title_activity_filter"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".activity.DisplayFilteruserActivity"
+            android:name="com.swipe.shrinkcom.swipe.activity.DisplayFilteruserActivity"
             android:label="@string/title_activity_display_filteruser"
             android:theme="@style/AppTheme"></activity>
 

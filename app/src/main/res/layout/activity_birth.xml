@@ -13,19 +13,26 @@
         android:layout_centerInParent="true"
         android:orientation="vertical">
 
-        <EditText
-            android:focusable="false"
-            android:focusableInTouchMode="true"
-            android:editable="false"
-            android:clickable="false"
-            android:id="@+id/edit_text_birthyear"
+        <LinearLayout
+            android:id="@+id/idbirthlayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
-            android:layout_marginRight="50dp"
-            android:layout_marginTop="20dp"
-            android:hint="Birth Year"
-            android:textColorHint="@color/colorPrimary" />
+            android:visibility="gone"
+            android:layout_marginRight="50dp">
+
+            <EditText
+                android:id="@+id/edit_text_birthyear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:clickable="false"
+                android:editable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="true"
+                android:hint="Birth Year"
+                android:textColorHint="@color/colorPrimary" />
+        </LinearLayout>
 
         <RadioGroup
 
